@@ -53,10 +53,10 @@ In this section, we will build a system to recommend similar products based on o
 * `Country`: The country where each transaction was generated
 
 After loading the dataset, make sure you have performed the following preprocessing step:
-1. Drop all the rows with missing value
-2. Convert each columns to its proper data type
-3. Remove leading and trailing whitespace on column `Description`
-4. Prepare a `code_to_name` and/or `name_to_code` dictionary mapping, assuming the product name used is the latest name by date
+* Drop all the rows with missing value
+* Convert each columns to its proper data type
+* Remove leading and trailing whitespace on column `Description`
+* Prepare a `code_to_name` and/or `name_to_code` dictionary mapping, assuming the product name used is the latest name by date
 
 In order to get the same result, pre-trained model `recommender.model` is provided to you inside the folder `models`. The model has a vocabulary of 3196 unique products and size of the word vector is 100 dimensions. The parameters used to train the model are as follow:
 * size = 100
