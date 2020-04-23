@@ -4,14 +4,7 @@
 
 This section will assess your understanding of general Word2Vec and Training Optimization concept.
 
-1. The following three statements are about Word2Vec, choose the **CORRECT** statement(s).
-
-(a) Word2Vec is an unsupervised learning, even though we use a neural network to train the data.
-
-(b) In Skip-Gram architecture, the values that are projected onto the hidden layer is the word vector for a certain word in vocabulary.
-
-(c) In CBOW architecture, the values that are projected onto the hidden layer is the word vector for a certain word in vocabulary.
-
+1. The following three statements are about Word2Vec, choose the **CORRECT** statement(s): (a) Word2Vec is an unsupervised learning, even though we use a neural network to train the data. (b) In Skip-Gram architecture, the values that are projected onto the hidden layer is the word vector for a certain word in vocabulary. (c) In CBOW architecture, the values that are projected onto the hidden layer is the word vector for a certain word in vocabulary.
   - [ ] (a) and (b)
   - [ ] (a) and (c)
   - [ ] (b) and (c)
@@ -102,7 +95,7 @@ class Callback(CallbackAny2Vec):
   - [ ] 11
   - [ ] 12
 
-7. If we use the system stated on question number 6, the number of recommended products will be different for each customer. Suppose we change how our recommender system works. Now, for each customer, we want the model to recommend exactly **10 most similar products** based on entire purchase history of a user. 
+If we use the system stated on question number 6, the number of recommended products will be different for each customer. Suppose we change how our recommender system works. Now, for each customer, we want the model to recommend exactly **10 most similar products** based on entire purchase history of a user. 
 
 First, you may need to find a list of purchased products for each customer:
 
@@ -110,7 +103,7 @@ First, you may need to find a list of purchased products for each customer:
 purchased_product_for_each_customer = retail.groupby("...")["..."].apply(list)
 ```
 
-Now, let's analyze customer with CustomerID "13160". Is there any product that they have purchased before, but the model recommends again? If yes, what is the product description?
+7. Now, let's analyze customer with CustomerID "13160". Is there any product that they have purchased before, but the model recommends again? If yes, what is the product description?
   - [ ] 15CM CHRISTMAS GLASS BALL 20 LIGHTS
   - [ ] BLUE SPOT CERAMIC DRAWER KNOB
   - [ ] DRAWER KNOB CERAMIC IVORY
