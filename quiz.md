@@ -25,7 +25,6 @@ ___
    - [ ] 21
    - [ ] 24
    - [ ] 27
-   - [ ] 30
 ___
 
 ___
@@ -34,7 +33,6 @@ ___
    - [ ] There are also 500,000 weights of the input matrix to be updated during backpropagation.
    - [ ] Using `negative = 20` or K = 20 means that only 20 weights (instead of 500,000) of the output matrix will be updated on each batch.
    - [ ] Using `ns_exponent = 0` or p = 0 means that every single word has a probability of 0.0002 to be choosen as negative sample.
-   - [ ] Using hierarchical softmax, the number of leaf nodes on Huffman Tree is 100.
    - [ ] Using hierarchical softmax, the size of our output matrix is still 100 x 5,000.
 ___
 
@@ -46,7 +44,6 @@ This section will assess your understanding of training Word2Vec using `gensim` 
 ___
 4. Choose one parameter that will speed up the training process if we increase its value, assuming the other parameters remain unchanged.
 
-   - [ ] epochs
    - [ ] min_count
    - [ ] negative
    - [ ] size
@@ -56,8 +53,7 @@ ___
 ___
 5. The following statements are all correct in the process of building a Word2Vec model using `gensim`, **EXCEPT** ...
 
-   - [ ] Stemming is not performed because a word can lose its semantic meaning.
-   - [ ] The model training is separated into three steps for clarity and monitoring.
+   - [ ] Stemming is rarely performed because a word can lose its semantic meaning.
    - [ ] We have to set up the `logging` and `callback` manually to monitor the training process.
    - [ ] Method `.build_vocab()` can be run more than once on the same model.
    - [ ] The training sentence is in the form of a "list of lists of tokens".
@@ -117,7 +113,6 @@ class Callback(CallbackAny2Vec):
 ___
 6. Let's say we build a recommender system so that items that have at least a similarity score of **0.90** with previous transactions will appear on the "Product Recommendation" section of a website. Suppose there is a customer who only purchased one item, namely **"BLUE PAISLEY TISSUE BOX"**. How many **new products** will appear on their "Product Recommendation" section?
 
-   - [ ] 8
    - [ ] 9
    - [ ] 10
    - [ ] 11
