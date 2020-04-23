@@ -35,8 +35,8 @@ This section will assess your understanding of training Word2Vec using `gensim` 
   
 5. The following statements are all correct in the process of building a Word2Vec model using `gensim`, **EXCEPT** ...
   - [ ] Stemming is rarely performed because a word can lose its semantic meaning.
-  - [ ] We have to set up the `logging` and `callback` manually to monitor the training process.
-  - [ ] Method `.build_vocab()` can be run more than once on the same model.
+  - [ ] The training process is separated into three steps for clarity and monitoring.
+  - [ ] We doesn't have to set up anything for printing out a training report.
   - [ ] The training sentence is in the form of a "list of lists of tokens".
 
 ## Case Study: Recommender System
